@@ -3,9 +3,12 @@ export interface ICountryData {
   pronunciation: string
   characters: string
   flag: string
+  audiopath?: string
 }
 
-const countryData: Record<string, ICountryData[]> = {
+export type TGeographyData = Record<string, ICountryData[]>
+
+const countryData: TGeographyData = {
   asia: [
     {
       country: 'china',
