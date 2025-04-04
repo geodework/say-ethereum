@@ -1,20 +1,16 @@
 'use client'
 
+import { TCountryRequieredData } from '@/data/country'
 import { Button } from './ui/button'
 import { Card, CardContent } from './ui/card'
-import japanAudio from '@/public/audio/japan.mp3'
 
 export default function CountryCard({
   country,
   pronunciation,
   flag,
-  characters = '',
-}: {
-  country: string
-  pronunciation: string
-  flag: string
-  characters?: string
-}) {
+  characters,
+  audiopath,
+}: TCountryRequieredData) {
   return (
     <Card className="overflow-hidden bg-yellow-50 border-4 border-blue-100 rounded-xl">
       {/* <div className="relative h-24 flex items-center justify-center bg-gradient-to-r from-pink-100 to-pink-200 p-3"> */}
@@ -39,7 +35,6 @@ export default function CountryCard({
         </div>
       </div>
       <CardContent className="p-6 bg-purple-50">
-        {/* <CardContent className="p-6"> */}
         <div className="flex items-center gap-3 mb-4">
           <span className="text-pink-400 text-xl">✧</span>
           <h4 className="text-xl font-bold text-purple-700 font-comic">
@@ -48,7 +43,7 @@ export default function CountryCard({
           <Button
             className="bg-yellow-200 hover:bg-yellow-300 text-yellow-800 rounded-full px-4 py-1 font-comic"
             onClick={() => {
-              const audio = new Audio(japanAudio)
+              const audio = new Audio(audiopath)
               audio.play()
             }}
           >

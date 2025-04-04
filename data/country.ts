@@ -8,6 +8,8 @@ export interface ICountryData {
 
 export type TGeographyData = Record<string, ICountryData[]>
 
+export type TCountryRequieredData = Required<ICountryData>
+
 const countryData: TGeographyData = {
   asia: [
     {

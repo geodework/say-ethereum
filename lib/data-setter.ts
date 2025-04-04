@@ -1,17 +1,15 @@
-import { ICountryData, TGeographyData } from '@/data/country'
+import {
+  ICountryData,
+  TCountryRequieredData,
+  TGeographyData,
+} from '@/data/country'
 import { getCountryAudio } from './audio-getter'
 
 export function setData(data: TGeographyData) {
   const sortedContinents = sortContinentByName(data)
   const sortedCountries = sortCountryByName(sortedContinents)
   setAudioPath(sortedCountries)
-  return sortedCountries
-}
-
-export function sortCountryData(data: TGeographyData) {
-  const sortedContinents = sortContinentByName(data)
-  const sortedCountries = sortCountryByName(sortedContinents)
-  return sortedCountries
+  return sortedCountries as Record<string, TCountryRequieredData[]>
 }
 
 function sortContinentByName(data: TGeographyData) {
@@ -35,7 +33,7 @@ function sortCountryByName(data: TGeographyData) {
 function setAudioPath(data: TGeographyData) {
   for (const continent of Object.keys(data)) {
     for (const geodata of data[continent]) {
-      geodata.audiopath = getCountryAudio(geodata.country)
+      geodata.audiopath = getCountryAudio(geodata.country) || '/audio/japan.mp3' // TODO: remote it. Only for testing.
 
       if (!geodata.audiopath)
         throw new Error(
