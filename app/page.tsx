@@ -1,22 +1,20 @@
 import { Tabs, TabsContent } from '@/components/ui/tabs'
 import CountryCard from '@/components/country-card'
 import EthereumBearButton from '@/components/ethereum-bear-button'
-import countryData, { ICountryData } from '@/data/country'
+import countryData from '@/data/country'
 import { setData } from '@/lib/data-setter'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Continents from '@/components/continents'
+
 const geoData = setData(countryData)
 const primaryContinent = Object.keys(geoData)[0]
-
-type TCountryData = Required<ICountryData>
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Main Content */}
       <div className="flex-1 bg-blue-50 py-8 px-4">
         <section className="max-w-4xl mx-auto bg-pink-50 rounded-3xl border-4 border-dashed border-pink-200 p-6 md:p-6">
           <div className="text-center mb-8">

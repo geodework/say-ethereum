@@ -13,9 +13,9 @@ export default function Footer() {
               href="https://geodework.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl font-bold underline hover:text-purple-100"
+              className="text-xl font-bold hover:text-purple-100"
             >
-              Geodework
+              &copy; Geodework {new Date().getFullYear()}
             </a>
           </div>
 
