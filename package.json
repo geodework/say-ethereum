@@ -1,11 +1,13 @@
 {
-  "name": "my-v0-project",
+  "name": "say-ethereum",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:watch": "next dev --turbo",
     "build": "next build",
     "start": "next start",
+    "start:ssg": "next build && npx serve@latest out",
     "lint": "next lint",
     "test": "vitest"
   },
