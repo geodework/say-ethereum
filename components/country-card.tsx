@@ -52,11 +52,10 @@ export default function CountryCard({
         </div>
         <div className="flex items-center justify-between gap-4 mb-4"></div>
         <div className="flex flex-col gap-2">
-          <div className="bg-yellow-100 p-3 rounded-lg text-center">
-            <p className="text-gray-700 font-comic">{pronunciation}</p>
-          </div>
           <div className="bg-yellow-100 p-3 rounded-lg text-center font-sans">
-            <p className="text-gray-700 ">{characters}</p>
+            <p className="text-gray-700 ">
+              {characters} ({pronunciation})
+            </p>
           </div>
         </div>
       </CardContent>
