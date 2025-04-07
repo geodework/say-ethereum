@@ -8,7 +8,7 @@ const audioFiles = fs.readdirSync(audioDir)
 // Create a mapping of country names to their audio files
 const countryAudio = audioFiles.reduce<Record<string, string>>((acc, file) => {
   // Remove .mp3 extension and use as country key
-  const country = path.basename(file, '.mp3')
+  const country = path.basename(file, '.mp3').toLowerCase()
   // Store the path relative to public directory for client-side usage
   acc[country] = `/audio/${file}`
   return acc
@@ -22,8 +22,10 @@ export function hasCountryAudio(country: string): country is CountryAudioKey {
 }
 
 // Get audio URL for a country if available
-export function getCountryAudio(country: string): string | undefined {
-  const key = country.toLowerCase() as CountryAudioKey
+export function getCountryAudio(countryToDisplay: string): string | undefined {
+  const key = countryToDisplay
+    .toLowerCase()
+    .replaceAll(' ', '') as CountryAudioKey
   return hasCountryAudio(key) ? countryAudio[key] : undefined
 }
 
