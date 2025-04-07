@@ -42,15 +42,8 @@ export default function Home() {
                 </section>
                 <div className="mt-4 md:mt-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    {countries.map((country) => (
-                      <CountryCard
-                        key={country.country}
-                        country={country.country}
-                        pronunciation={country.pronunciation}
-                        characters={country.characters}
-                        flag={country.flag}
-                        audiopath={country.audiopath}
-                      />
+                    {countries.map((geodata) => (
+                      <CountryCard geodata={geodata} key={geodata.country} />
                     ))}
                   </div>
                 </div>

@@ -5,21 +5,18 @@ import { Button } from './ui/button'
 import { Card, CardContent } from './ui/card'
 
 export default function CountryCard({
-  country,
-  pronunciation,
-  flag,
-  characters,
-  audiopath,
-}: TCountryRequieredData) {
+  geodata,
+}: {
+  geodata: TCountryRequieredData
+}) {
   return (
     <Card className="overflow-hidden bg-yellow-50 border-4 border-blue-100 rounded-xl">
-      {/* <div className="relative h-24 flex items-center justify-center bg-gradient-to-r from-pink-100 to-pink-200 p-3"> */}
       <div className="relative h-24 flex items-center justify-center p-3">
         <div className="absolute top-2 right-2">
           <span className="text-yellow-600">✧</span>
         </div>
         <div className="flex items-center justify-center">
-          <span className="text-6xl">{flag}</span>
+          <span className="text-6xl">{geodata.flag}</span>
         </div>
         <div className="absolute bottom-0 w-full">
           <svg
@@ -38,12 +35,12 @@ export default function CountryCard({
         <div className="flex items-center gap-3 mb-4">
           <span className="text-pink-400 text-xl">✧</span>
           <h4 className="text-xl font-bold text-purple-700 font-comic">
-            {country}
+            {geodata.country}
           </h4>
           <Button
             className="bg-yellow-200 hover:bg-yellow-300 text-yellow-800 rounded-full px-4 py-1 font-comic"
             onClick={() => {
-              const audio = new Audio(audiopath)
+              const audio = new Audio(geodata.audiopath)
               audio.play()
             }}
           >
@@ -54,7 +51,7 @@ export default function CountryCard({
         <div className="flex flex-col gap-2">
           <div className="bg-yellow-100 p-3 rounded-lg text-center font-sans">
             <p className="text-gray-700 ">
-              {characters} ({pronunciation})
+              {geodata.characters} ({geodata.pronunciation})
             </p>
           </div>
         </div>
