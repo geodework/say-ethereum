@@ -33,7 +33,8 @@ function sortCountryByName(data: TGeographyData) {
 function setAudioPath(data: TGeographyData) {
   for (const continent of Object.keys(data)) {
     for (const geodata of data[continent]) {
-      geodata.audiopath = getCountryAudio(geodata.country) || '/audio/japan.mp3' // TODO: remote it. Only for testing.
+      geodata.audiopath =
+        getCountryAudio(geodata.language) || '/audio/japanese.mp3' // TODO: remote it. Only for testing.
 
       if (!geodata.audiopath)
         throw new Error(
