@@ -25,7 +25,7 @@ export default function EthereumBearButton() {
   }
 
   return (
-    <div className="fixed bottom-6 right-2 md:right-6 z-50 scale-90 md:scale-100">
+    <div className="fixed bottom-12 right-2 md:right-6 z-50 scale-90 md:scale-100">
       {/* Main button with brown bear and pink border */}
       <motion.button
         className="bg-gradient-to-b from-blue-100 to-blue-50 rounded-full p-3 shadow-lg border-4 border-pink-300 relative overflow-visible"
