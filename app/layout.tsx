@@ -2,11 +2,24 @@ import type React from 'react'
 import type { Metadata } from 'next'
 import './globals.css'
 
-// TO be env values
-// const url = 'https://sayethereum.com'
-// const image = 'https://sayethereum.com/og.png'
-const url = 'http://localhost:3000'
-const image = 'http://localhost:3000/og.png'
+const getBaseUrl = () => {
+  if (process.env.NEXT_PUBLIC_DOMAIN) {
+    // Production domain (if set)
+    return `https://${process.env.NEXT_PUBLIC_DOMAIN}`
+  }
+  if (process.env.VERCEL_URL) {
+    // Vercel deployment (preview or production)
+    return `https://${process.env.VERCEL_URL}`
+  }
+  // Development
+  return 'http://localhost:3000'
+}
+
+const baseUrl = getBaseUrl()
+const url = baseUrl
+const image = `${baseUrl}/og.png`
+
+const siteName = 'Say Ethereum'
 
 const title =
   'Say Ethereum - Discover how to pronounce Ethereum in different languages and countries by Geodework'
@@ -28,12 +41,14 @@ export const metadata: Metadata = {
     type: 'website',
     url,
     images: [{ url: image }],
+    siteName,
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
     images: [image],
+    site: siteName,
   },
 }
 
