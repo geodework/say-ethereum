@@ -8,7 +8,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center">
           <div className="mb-4 text-center">
-            <p className="font-bold text-lg">Powered by</p>
+            <p className="font-bold text-lg">Created by</p>
             <a
               href="https://geodework.com"
               target="_blank"
