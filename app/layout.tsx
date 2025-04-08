@@ -19,6 +19,8 @@ const baseUrl = getBaseUrl()
 const url = baseUrl
 const image = `${baseUrl}/og.png`
 
+const siteName = 'Say Ethereum'
+
 const title =
   'Say Ethereum - Discover how to pronounce Ethereum in different languages and countries by Geodework'
 const description =
@@ -39,12 +41,14 @@ export const metadata: Metadata = {
     type: 'website',
     url,
     images: [{ url: image }],
+    siteName,
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
     images: [image],
+    site: siteName,
   },
 }
 
