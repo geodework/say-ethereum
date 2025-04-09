@@ -197,6 +197,13 @@ const countryData: TGeographyData = {
       language: 'Serbian',
       flag: '🇷🇸',
     },
+    {
+      country: 'Slovenia',
+      pronunciation: 'Eterij',
+      characters: 'Eterij',
+      language: 'Slovene',
+      flag: '🇸🇮',
+    },
   ],
   americas: [
     {
