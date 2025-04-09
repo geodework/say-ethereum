@@ -220,6 +220,13 @@ const countryData: TGeographyData = {
       language: 'MexicanSpanish',
       flag: '🇲🇽',
     },
+    {
+      country: 'Argentina',
+      pronunciation: 'Eterio',
+      characters: 'Eterio',
+      language: 'ArgentinianSpanish',
+      flag: '🇦🇷',
+    },
   ],
   africa: [
     {
