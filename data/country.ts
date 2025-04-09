@@ -262,6 +262,13 @@ const countryData: TGeographyData = {
       language: 'AustralianEnglish',
       flag: '🇦🇺',
     },
+    {
+      country: 'New Zealand',
+      pronunciation: 'Ethereum',
+      characters: 'Ethereum',
+      language: 'NewZealandEnglish',
+      flag: '🇳🇿',
+    },
   ],
 }
 
