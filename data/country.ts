@@ -190,6 +190,20 @@ const countryData: TGeographyData = {
       language: 'Italian',
       flag: '🇮🇹',
     },
+    {
+      country: 'Serbia',
+      pronunciation: 'Eterijum',
+      characters: 'Етеријум',
+      language: 'Serbian',
+      flag: '🇷🇸',
+    },
+    {
+      country: 'Slovenia',
+      pronunciation: 'Eterij',
+      characters: 'Eterij',
+      language: 'Slovene',
+      flag: '🇸🇮',
+    },
   ],
   americas: [
     {
@@ -219,6 +233,13 @@ const countryData: TGeographyData = {
       characters: 'Eterio',
       language: 'MexicanSpanish',
       flag: '🇲🇽',
+    },
+    {
+      country: 'Argentina',
+      pronunciation: 'Eterio',
+      characters: 'Eterio',
+      language: 'ArgentinianSpanish',
+      flag: '🇦🇷',
     },
   ],
   africa: [
@@ -261,6 +282,13 @@ const countryData: TGeographyData = {
       characters: 'Ethereum',
       language: 'AustralianEnglish',
       flag: '🇦🇺',
+    },
+    {
+      country: 'New Zealand',
+      pronunciation: 'Ethereum',
+      characters: 'Ethereum',
+      language: 'NewZealandEnglish',
+      flag: '🇳🇿',
     },
   ],
 }
