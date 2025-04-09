@@ -190,6 +190,13 @@ const countryData: TGeographyData = {
       language: 'Italian',
       flag: '🇮🇹',
     },
+    {
+      country: 'Serbia',
+      pronunciation: 'Eterijum',
+      characters: 'Етеријум',
+      language: 'Serbian',
+      flag: '🇷🇸',
+    },
   ],
   americas: [
     {
