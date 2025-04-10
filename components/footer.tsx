@@ -1,5 +1,6 @@
 'use client'
 
+import { SITE_NAME } from '@/lib/constant'
 import { Copy, Check } from 'lucide-react'
 import { useState } from 'react'
 
@@ -35,7 +36,7 @@ export default function Footer() {
     <footer className="bg-pink-300 p-6 sm:py-4 text-white">
       <div className="max-w-4xl mx-auto">
         <p className="text-center mb-4">
-          ✧･ﾟ Say Ethereum ✧･ﾟ A pronunciation guide ✧･ﾟ
+          `✧･ﾟ ${SITE_NAME} ✧･ﾟ A pronunciation guide ✧･ﾟ`
         </p>
 
         <div className="flex flex-col items-center">
