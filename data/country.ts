@@ -7,6 +7,14 @@ export interface ICountryData {
   audiopath?: string
 }
 
+export const globe: Record<string, string> = {
+  asia: '🌏',
+  europe: '🌍',
+  americas: '🌎',
+  africa: '🌍',
+  oceania: '🌏',
+}
+
 export type TGeographyData = Record<string, ICountryData[]>
 
 export type TCountryRequieredData = Required<ICountryData>

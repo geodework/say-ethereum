@@ -1,3 +1,6 @@
+import { SITE_NAME } from '@/lib/constant'
+import Link from 'next/link'
+
 export default function Header() {
   return (
     <header className="bg-pink-300 py-4 border-b-4 border-dashed border-white">
@@ -11,7 +14,7 @@ export default function Header() {
             </div>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-purple-700 drop-shadow-md">
-            Say Ethereum
+            <Link href="/">{SITE_NAME}</Link>
           </h1>
         </div>
         <div className="text-white mt-1 text-md sm:text-xl md:text-2xl">
