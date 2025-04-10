@@ -11,12 +11,14 @@ const data: Record<string, ICountryData[]> = {
       pronunciation: 'b',
       characters: 'b',
       flag: 'b',
+      language: 'b',
     },
     {
       country: 'a',
       pronunciation: 'a',
       characters: 'a',
       flag: 'a',
+      language: 'a',
     },
   ],
   a: [
@@ -25,6 +27,7 @@ const data: Record<string, ICountryData[]> = {
       pronunciation: 'c',
       characters: 'c',
       flag: 'c',
+      language: 'c',
     },
   ],
 }
