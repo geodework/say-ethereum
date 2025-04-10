@@ -24,7 +24,7 @@ export default function Home() {
             <p className="text-gray-600 max-w-3xl mx-auto font-comic">
               Ethereum is a global technology, but it's pronounced differently
               across the world! Discover how 'Ethereum' sounds in each
-              country—one major language at a time!"
+              country—one language at a time!"
             </p>
           </div>
 
