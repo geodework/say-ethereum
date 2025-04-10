@@ -1,7 +1,7 @@
 import { Tabs, TabsContent } from '@/components/ui/tabs'
 import CountryCard from '@/components/country-card'
 import EthereumBearButton from '@/components/ethereum-bear-button'
-import countryData from '@/data/country'
+import countryData, { globe } from '@/data/country'
 import { setData } from '@/lib/data-setter'
 import Continents from '@/components/continents'
 import { generateMetadata } from '@/lib/metadata'
@@ -36,7 +36,9 @@ export default function Home() {
           <TabsContent key={continent} value={continent}>
             <section>
               <header className="flex items-center gap-3 bg-pink-50 border-blue-200 rounded-3xl mt-8 sm:mt-6 sm:p-4 md:p-4">
-                <div className="text-4xl rounded-full overflow-hidden">🌎</div>
+                <div className="text-4xl rounded-full overflow-hidden">
+                  {globe[continent]}
+                </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-600">
                   {continent.charAt(0).toUpperCase() + continent.slice(1)}
                 </h3>
