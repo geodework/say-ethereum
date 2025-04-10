@@ -1,14 +1,16 @@
 'use client'
 
+import { useState } from 'react'
 import { TCountryRequieredData } from '@/data/country'
 import { Button } from './ui/button'
 import { Card, CardContent } from './ui/card'
-
 export default function CountryCard({
   geodata,
 }: {
   geodata: TCountryRequieredData
 }) {
+  const [isPlaying, setIsPlaying] = useState(false)
+
   return (
     <Card className="overflow-hidden bg-yellow-50 border-4 border-blue-100 rounded-xl">
       <div className="relative h-24 flex items-center justify-center p-3">
@@ -40,11 +42,17 @@ export default function CountryCard({
           <Button
             className="bg-yellow-200 hover:bg-yellow-300 text-yellow-800 rounded-full px-4 py-1 font-comic"
             onClick={() => {
-              const audio = new Audio(geodata.audiopath)
-              audio.play()
+              if (!isPlaying) {
+                const audio = new Audio(geodata.audiopath)
+                audio.play()
+                setIsPlaying(true)
+                setTimeout(() => {
+                  setIsPlaying(false)
+                }, 1000)
+              }
             }}
           >
-            Play ▶
+            Play {isPlaying ? '⏹' : '▶'}
           </Button>
         </div>
         <div className="flex items-center justify-between gap-4 mb-4"></div>
