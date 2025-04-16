@@ -49,20 +49,20 @@ export default function Footer() {
     <footer className="bg-pink-300 p-6 sm:py-8 text-white">
       <div className="max-w-4xl mx-auto">
         <p className="text-center mb-6">
-          `✧･ﾟ ${SITE_NAME} ✧･ﾟ A pronunciation guide ✧･ﾟ`
+          `✧･ﾟ {SITE_NAME} ✧･ﾟ A pronunciation guide ✧･ﾟ`
         </p>
 
         <div className="flex flex-col items-center gap-4">
           {/* Section 1: Newsletter & Feedback */}
-          <div className="text-center">
-            <p className="text-sm mb-1">Sign up for:</p>
+          <div className="text-center p-3 rounded-lg w-full max-w-md">
+            <p className="text-sm mb-2">Sign up for:</p>
             <a
               href="https://localethereum.beehiiv.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-sm underline hover:text-purple-100"
+              className="inline-block text-base font-medium border-b border-dotted border-purple-200 pb-1 hover:border-purple-300 hover:text-purple-100 transition-colors duration-300"
             >
-              {product}
+              ✉️ {product} ✉️
             </a>
           </div>
 
@@ -92,7 +92,7 @@ export default function Footer() {
                 className="text-sm hover:text-purple-100"
               >
                 {s.name}
-                {s.isDonate && <span className="text-purple-500 ml-1">♥</span>}
+                {s.isDonate && <span className="text-purple-400 ml-1">♥</span>}
               </a>
             ))}
           </div>
