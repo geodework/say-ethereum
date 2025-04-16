@@ -133,6 +133,20 @@ const countryData: TGeographyData = {
       language: 'TaiwaneseMandarin',
       flag: '🇹🇼',
     },
+    {
+      country: 'Thailand',
+      pronunciation: 'Etherium',
+      characters: 'อีเธอเรียม',
+      language: 'Thai',
+      flag: '🇹🇭',
+    },
+    {
+      country: 'Cambodia',
+      pronunciation: 'Etherium',
+      characters: 'Ethereum',
+      language: 'Khmer',
+      flag: '🇰🇭',
+    },
   ],
   europe: [
     {
@@ -248,6 +262,13 @@ const countryData: TGeographyData = {
       characters: 'Ethereum',
       language: 'ArgentinianSpanish',
       flag: '🇦🇷',
+    },
+    {
+      country: 'Venezuela',
+      pronunciation: 'Etereum',
+      characters: 'Ethereum',
+      language: 'VenezuelanSpanish',
+      flag: '🇻🇪',
     },
   ],
   africa: [
