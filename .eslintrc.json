@@ -8,8 +8,7 @@
     "no-console": "warn",
     "quotes": ["warn", "double"],
     "indent": ["warn", 2],
-    "comma-dangle": ["warn", "always-multiline"],
-    "eol-last": ["warn", "always"]
+    "comma-dangle": ["warn", "always-multiline"]
   },
   "overrides": [
     {
