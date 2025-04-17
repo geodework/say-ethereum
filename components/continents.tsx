@@ -1,4 +1,4 @@
-import { TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 interface ContinentProps {
   continents: string[]

@@ -2,8 +2,8 @@ import {
   ICountryData,
   TCountryRequieredData,
   TGeographyData,
-} from '@/data/country'
-import { getCountryAudio } from './audio-getter'
+} from "@/data/country"
+import { getCountryAudio } from "./audio-getter"
 
 export function setData(data: TGeographyData) {
   const sortedContinents = sortContinentByName(data)

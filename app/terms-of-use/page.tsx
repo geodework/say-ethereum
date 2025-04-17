@@ -1,22 +1,21 @@
-import { generateMetadata } from '@/lib/metadata'
-import { Metadata } from 'next'
-import { EPage } from '@/lib/constant'
-import MainWrapper, { LegalCss } from '@/components/MainWrapper'
-import { cn } from '@/lib/utils'
+import { generateMetadata } from "@/lib/metadata"
+import { Metadata } from "next"
+import { EPage } from "@/lib/constant"
+import MainWrapper, { LegalCss } from "@/components/MainWrapper"
+import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = generateMetadata({
   params: { pageType: EPage.TermsOfUse },
 })
 
-const titleCss = LegalCss.titleCss
-const listWrapperCss = LegalCss.listWrapperCss
+const { titleCss, listWrapperCss } = LegalCss
 
 export default function TermsOfUse() {
   return (
     <MainWrapper>
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-pink-400 mb-4 font-comic">
-          "Say Ethereum" Terms and Conditions
+          &quot;Say Ethereum&quot; Terms and Conditions
         </h1>
         <p className="text-gray-600 max-w-3xl mx-auto font-comic">
           Last Updated: April 9, 2025
@@ -25,15 +24,17 @@ export default function TermsOfUse() {
 
       <div className="text-gray-700 max-w-3xl mx-auto font-comic space-y-6">
         <p>
-          This Terms and Conditions (the "Agreement") is a contract between you
-          and General Index, LLC (dba Geodework) (the "Company," "we," or "us")
-          that applies to your use of the "Say Ethereum" website
-          (https://say-ethereum.vercel.app/) (the "Website") as a user ("User",
-          "you" or "your"). By using the Website, you agree that you have read,
-          understood and accept all the terms and conditions contained in this
-          Agreement as well as our Privacy Policy, and you acknowledge and agree
-          that you will be bound by them. Section 8 of this Agreement governs
-          how this Agreement may be changed over time.
+          This Terms and Conditions (the &quot;Agreement&quot;) is a contract
+          between you and General Index, LLC (dba Geodework) (the
+          &quot;Company,&quot; &quot;we,&quot; or &quot;us&quot;) that applies
+          to your use of the &quot;Say Ethereum&quot; website
+          (https://say-ethereum.vercel.app/) (the &quot;Website&quot;) as a user
+          (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;). By using the
+          Website, you agree that you have read, understood and accept all the
+          terms and conditions contained in this Agreement as well as our
+          Privacy Policy, and you acknowledge and agree that you will be bound
+          by them. Section 8 of this Agreement governs how this Agreement may be
+          changed over time.
         </p>
 
         <h2 className={titleCss}>1. Access to and Changes to Our Website</h2>
@@ -58,10 +59,10 @@ export default function TermsOfUse() {
         <p>
           The Website is not intended for children under the age of majority in
           the country they live (i.e. 18 years of age in the United States)
-          ("Minors"), and we do not knowingly collect information from Minors
-          without parental consent. If we learn we have collected or received
-          personal information from a Minor without verification of parental
-          consent, we will delete that information.
+          (&quot;Minors&quot;), and we do not knowingly collect information from
+          Minors without parental consent. If we learn we have collected or
+          received personal information from a Minor without verification of
+          parental consent, we will delete that information.
         </p>
 
         <h2 className={titleCss}>3. Privacy Policy</h2>
@@ -95,7 +96,7 @@ export default function TermsOfUse() {
           In connection with your use of the Website, you hereby agree that you
           will not:
         </p>
-        <ul className={cn(listWrapperCss, 'list-[lower-alpha]')}>
+        <ul className={cn(listWrapperCss, "list-[lower-alpha]")}>
           <li>
             Violate (or assist any other party in violating) any applicable law,
             statute, ordinance, or regulation;
@@ -127,7 +128,7 @@ export default function TermsOfUse() {
           You agree to indemnify and hold us, our affiliates, and service
           providers, and each of their officers, directors, agents, joint
           venturers, employees, and representatives harmless from any claim or
-          demand (including attorneys' fees and any losses, fines, fees or
+          demand (including attorneys&apos; fees and any losses, fines, fees or
           penalties imposed by any regulatory authority) arising out of your
           breach of this Agreement, your violation of any law or regulation or
           your use of the Website.
@@ -149,18 +150,18 @@ export default function TermsOfUse() {
           OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO THROUGH OR FROM THE
           WEBSITE; (III) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR
           TRANSMISSIONS OR DATA; OR (IV) ANY OTHER MATTER RELATING TO THE
-          WEBSITE. UNDER NO CIRCUMSTANCES WILL WE BE LIABLE FOR “EXEMPLARY” OR
-          “PUNITIVE” DAMAGES.
+          WEBSITE. UNDER NO CIRCUMSTANCES WILL WE BE LIABLE FOR
+          &quot;EXEMPLARY&quot; OR &quot;PUNITIVE&quot; DAMAGES.
         </p>
         <p>
-          THE WEBSITE IS PROVIDED “AS IS” AND WITHOUT ANY REPRESENTATION OR
-          WARRANTY, WHETHER EXPRESS, IMPLIED OR STATUTORY. WE SPECIFICALLY
-          DISCLAIM ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR
-          A PARTICULAR PURPOSE OR NON-INFRINGEMENT. WE MAKE NO WARRANTY THAT (I)
-          THE WEBSITE WILL MEET YOUR REQUIREMENTS, (II) THE WEBSITE WILL BE
-          UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE, OR (III) THE QUALITY OF
-          ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR
-          OBTAINED BY YOU WILL MEET YOUR EXPECTATIONS.
+          THE WEBSITE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY
+          REPRESENTATION OR WARRANTY, WHETHER EXPRESS, IMPLIED OR STATUTORY. WE
+          SPECIFICALLY DISCLAIM ANY IMPLIED WARRANTIES OF TITLE,
+          MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.
+          WE MAKE NO WARRANTY THAT (I) THE WEBSITE WILL MEET YOUR REQUIREMENTS,
+          (II) THE WEBSITE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE,
+          OR (III) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER
+          MATERIAL PURCHASED OR OBTAINED BY YOU WILL MEET YOUR EXPECTATIONS.
         </p>
 
         <h2 className={titleCss}>8. Changes to this Agreement</h2>
@@ -182,12 +183,13 @@ export default function TermsOfUse() {
         </p>
         <p>
           The Website may also contain links to third-party websites,
-          applications, events or other materials ("Third Party Content"). Such
-          information is provided for your convenience and links or references
-          to Third Party Content do not constitute an endorsement by us of any
-          products or services. We shall have no liability for any losses
-          incurred as a result of actions taken in reliance on the information
-          contained on the Website or in any Third Party Content.
+          applications, events or other materials (&quot;Third Party
+          Content&quot;). Such information is provided for your convenience and
+          links or references to Third Party Content do not constitute an
+          endorsement by us of any products or services. We shall have no
+          liability for any losses incurred as a result of actions taken in
+          reliance on the information contained on the Website or in any Third
+          Party Content.
         </p>
 
         <h2 className={titleCss}>10. Limited License; IP Rights</h2>
@@ -216,7 +218,8 @@ export default function TermsOfUse() {
           in such proceeding shall be final, binding and non-appealable, and
           judgment upon the award rendered by the arbitrator may be entered in
           any court having jurisdiction thereof. The prevailing party shall be
-          entitled to reimbursement for costs and reasonable attorneys' fees.
+          entitled to reimbursement for costs and reasonable attorneys&apos;
+          fees.
         </p>
 
         <h2 className={titleCss}>12. Governing Law; Venue</h2>

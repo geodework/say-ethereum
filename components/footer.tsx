@@ -1,38 +1,38 @@
-'use client'
+"use client"
 
-import { SITE_NAME } from '@/lib/constant'
-import { Copy, Check } from 'lucide-react'
-import Link from 'next/link'
-import { useState } from 'react'
+import { SITE_NAME } from "@/lib/constant"
+import { Copy, Check } from "lucide-react"
+import Link from "next/link"
+import { useState } from "react"
 
 const sns = [
   {
-    name: 'GitHub',
-    href: 'https://github.com/geodework',
+    name: "GitHub",
+    href: "https://github.com/geodework",
   },
   {
-    name: 'X (Twitter)',
-    href: 'https://twitter.com/geodework',
+    name: "X (Twitter)",
+    href: "https://twitter.com/geodework",
   },
   {
-    name: 'Donate',
-    href: 'https://geodework.com/donate',
+    name: "Donate",
+    href: "https://geodework.com/donate",
     isDonate: true,
   },
 ]
 
-const email = 'sayethereum@geodework.com'
+const email = "sayethereum@geodework.com"
 
-const product = 'Local Ethereum Newsletter'
+const product = "Local Ethereum Newsletter"
 
 const internalLinks = [
   {
-    name: 'Terms of Use',
-    href: '/terms-of-use',
+    name: "Terms of Use",
+    href: "/terms-of-use",
   },
   {
-    name: 'Privacy Policy',
-    href: '/privacy-policy',
+    name: "Privacy Policy",
+    href: "/privacy-policy",
   },
 ]
 

@@ -1,5 +1,5 @@
-import { SITE_NAME } from '@/lib/constant'
-import Link from 'next/link'
+import { SITE_NAME } from "@/lib/constant"
+import Link from "next/link"
 
 export default function Header() {
   return (

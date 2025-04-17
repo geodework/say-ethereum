@@ -8,5 +8,5 @@ export const getBaseUrl = () => {
     return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
   }
   // Development
-  return 'http://localhost:3000'
+  return "http://localhost:3000"
 }
