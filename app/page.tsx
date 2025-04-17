@@ -1,13 +1,13 @@
-import { Tabs, TabsContent } from '@/components/ui/tabs'
-import CountryCard from '@/components/country-card'
-import EthereumBearButton from '@/components/ethereum-bear-button'
-import countryData, { globe } from '@/data/country'
-import { setData } from '@/lib/data-setter'
-import Continents from '@/components/continents'
-import { generateMetadata } from '@/lib/metadata'
-import { Metadata } from 'next'
-import MainWrapper from '@/components/MainWrapper'
-import { EPage } from '@/lib/constant'
+import { Tabs, TabsContent } from "@/components/ui/tabs"
+import CountryCard from "@/components/country-card"
+import EthereumBearButton from "@/components/ethereum-bear-button"
+import countryData, { globe } from "@/data/country"
+import { setData } from "@/lib/data-setter"
+import Continents from "@/components/continents"
+import { generateMetadata } from "@/lib/metadata"
+import { Metadata } from "next"
+import MainWrapper from "@/components/MainWrapper"
+import { EPage } from "@/lib/constant"
 
 export const metadata: Metadata = generateMetadata({
   params: { pageType: EPage.Home },
@@ -21,12 +21,12 @@ export default function Home() {
     <MainWrapper>
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-pink-400 mb-4 font-comic">
-          How do you say "Ethereum"? ( ๑•ᴗ•๑)
+          How do you say &quot;Ethereum&quot;? ( ๑•ᴗ•๑)
         </h1>
         <p className="text-gray-600 max-w-3xl mx-auto font-comic">
-          Ethereum is a global technology, but it's pronounced differently
-          across the world! Discover how 'Ethereum' sounds in each country—one
-          language at a time!"
+          Ethereum is a global technology, but it&apos;s pronounced differently
+          across the world! Discover how &apos;Ethereum&apos; sounds in each
+          country&mdash;one language at a time!
         </p>
       </div>
 

@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "quotes": ["warn", "double"],
+    "indent": ["warn", 2],
+    "comma-dangle": ["warn", "always-multiline"]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
+}

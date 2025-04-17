@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function EthereumBearButton() {
   const [isHovered, setIsHovered] = useState(false)
@@ -19,7 +19,7 @@ export default function EthereumBearButton() {
 
   const handleClick = () => {
     setIsClicked(true)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: "smooth" })
     // Reset the animation after 2 seconds
     setTimeout(() => setIsClicked(false), 3000)
   }
@@ -42,7 +42,7 @@ export default function EthereumBearButton() {
             <motion.div
               className="absolute inset-0 bg-gradient-to-b from-blue-200 to-blue-400"
               animate={{ rotate: rotation }}
-              transition={{ type: 'linear', duration: 0.05 }}
+              transition={{ type: "linear", duration: 0.05 }}
             >
               {/* Globe continents */}
               <svg
@@ -69,7 +69,7 @@ export default function EthereumBearButton() {
               transition={{
                 repeat: Number.POSITIVE_INFINITY,
                 duration: 5,
-                ease: 'easeInOut',
+                ease: "easeInOut",
               }}
             >
               <svg
@@ -96,7 +96,7 @@ export default function EthereumBearButton() {
               transition={{
                 repeat: Number.POSITIVE_INFINITY,
                 duration: 7,
-                ease: 'easeInOut',
+                ease: "easeInOut",
               }}
             >
               <svg
@@ -143,21 +143,21 @@ export default function EthereumBearButton() {
               <circle cx="46" cy="16" r="4" fill="#F8E0C0" />
               {/* Bear face - no mouth */}
               <circle cx="26" cy="26" r="2.5" fill="#5D4037" /> {/* Left eye */}
-              <circle cx="38" cy="26" r="2.5" fill="#5D4037" />{' '}
+              <circle cx="38" cy="26" r="2.5" fill="#5D4037" />{" "}
               {/* Right eye */}
-              <ellipse cx="32" cy="32" rx="3" ry="2" fill="#5D4037" />{' '}
+              <ellipse cx="32" cy="32" rx="3" ry="2" fill="#5D4037" />{" "}
               {/* Nose */}
               {/* Rosy cheeks - kawaii style */}
               <circle cx="24" cy="30" r="3" fill="#FF9EB1" fillOpacity="0.3" />
               <circle cx="40" cy="30" r="3" fill="#FF9EB1" fillOpacity="0.3" />
               {/* Bear paws */}
-              <circle cx="20" cy="52" r="6" fill="url(#bearPawGradient)" />{' '}
+              <circle cx="20" cy="52" r="6" fill="url(#bearPawGradient)" />{" "}
               {/* Left paw */}
-              <circle cx="44" cy="52" r="6" fill="url(#bearPawGradient)" />{' '}
+              <circle cx="44" cy="52" r="6" fill="url(#bearPawGradient)" />{" "}
               {/* Right paw */}
-              <circle cx="20" cy="54" r="2" fill="#A1887F" />{' '}
+              <circle cx="20" cy="54" r="2" fill="#A1887F" />{" "}
               {/* Left paw pad */}
-              <circle cx="44" cy="54" r="2" fill="#A1887F" />{' '}
+              <circle cx="44" cy="54" r="2" fill="#A1887F" />{" "}
               {/* Right paw pad */}
               {/* Gradients for brown coloring */}
               <defs>
@@ -215,7 +215,7 @@ export default function EthereumBearButton() {
             }}
             transition={{
               duration: isClicked ? 0.5 : 0.3,
-              ease: 'easeInOut',
+              ease: "easeInOut",
             }}
           >
             {/* Glow effect for Ethereum */}
@@ -253,8 +253,8 @@ export default function EthereumBearButton() {
           <span
             className="text-xs font-medium text-pink-600 whitespace-nowrap tracking-wide"
             style={{
-              textShadow: '1px 1px 0 #fff',
-              fontFamily: '"Comic Sans MS", cursive',
+              textShadow: "1px 1px 0 #fff",
+              fontFamily: "\"Comic Sans MS\", cursive",
             }}
           >
             ｡･ﾟTo Top ⤴ﾟ･｡
@@ -298,7 +298,7 @@ export default function EthereumBearButton() {
               transition={{
                 duration: 1.5,
                 repeat: Number.POSITIVE_INFINITY,
-                repeatType: 'reverse',
+                repeatType: "reverse",
               }}
             >
               <svg
@@ -327,7 +327,7 @@ export default function EthereumBearButton() {
               transition={{
                 duration: 1.8,
                 repeat: Number.POSITIVE_INFINITY,
-                repeatType: 'reverse',
+                repeatType: "reverse",
                 delay: 0.3,
               }}
             >
@@ -357,7 +357,7 @@ export default function EthereumBearButton() {
               transition={{
                 duration: 2,
                 repeat: Number.POSITIVE_INFINITY,
-                repeatType: 'reverse',
+                repeatType: "reverse",
                 delay: 0.5,
               }}
             >
@@ -387,7 +387,7 @@ export default function EthereumBearButton() {
               transition={{
                 duration: 1.7,
                 repeat: Number.POSITIVE_INFINITY,
-                repeatType: 'reverse',
+                repeatType: "reverse",
                 delay: 0.2,
               }}
             >
@@ -414,9 +414,9 @@ export default function EthereumBearButton() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               style={{
-                transform: 'scale(1.4)',
+                transform: "scale(1.4)",
                 opacity: 0.6,
-                pointerEvents: 'none',
+                pointerEvents: "none",
               }}
             >
               <circle

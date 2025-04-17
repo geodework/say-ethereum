@@ -1,9 +1,9 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { TCountryRequieredData } from '@/data/country'
-import { Button } from './ui/button'
-import { Card, CardContent } from './ui/card'
+import { useState } from "react"
+import { TCountryRequieredData } from "@/data/country"
+import { Button } from "./ui/button"
+import { Card, CardContent } from "./ui/card"
 export default function CountryCard({
   geodata,
 }: {
@@ -52,7 +52,7 @@ export default function CountryCard({
               }
             }}
           >
-            Play {isPlaying ? '⏹' : '▶'}
+            Play {isPlaying ? "⏹" : "▶"}
           </Button>
         </div>
         <div className="flex items-center justify-between gap-4 mb-4"></div>

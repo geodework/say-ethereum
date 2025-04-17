@@ -13,7 +13,7 @@ export default function MainWrapper({
 }
 
 export const LegalCss = {
-  subtitleCss: 'text-lg font-bold mt-4 mb-2',
-  titleCss: 'text-xl font-bold text-pink-400 mb-2',
-  listWrapperCss: 'list-disc pl-6 space-y-2',
+  subtitleCss: "text-lg font-bold mt-4 mb-2",
+  titleCss: "text-xl font-bold text-pink-400 mb-2",
+  listWrapperCss: "list-disc pl-6 space-y-2",
 }

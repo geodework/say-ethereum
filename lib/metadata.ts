@@ -1,17 +1,17 @@
-import { EPage } from './constant'
-import { getBaseUrl } from './url'
+import { EPage } from "./constant"
+import { getBaseUrl } from "./url"
 
 const url = getBaseUrl()
 const image = `${url}/og.png`
 
-const siteName = 'Say Ethereum'
+const siteName = "Say Ethereum"
 
 const title = `${siteName} - Discover how to pronounce Ethereum in different languages and countries by Geodework`
 
 const metadataList = {
   [EPage.Home]: {
     description:
-      'Learn how to pronounce Ethereum in different languages around the world. Geodework will pursue the geographic decentralization of Ethereum.',
+      "Learn how to pronounce Ethereum in different languages around the world. Geodework will pursue the geographic decentralization of Ethereum.",
   },
   [EPage.PrivacyPolicy]: {
     description: `Privacy Policy for ${siteName} - Learn about how we handle and protect your data when using our Ethereum pronunciation guide.`,
@@ -26,24 +26,24 @@ export function generateMetadata({ params }: { params: { pageType: EPage } }) {
   const description = metadataList[pageType].description
 
   return {
-    title: `${pageType !== EPage.Home ? `${pageType} | ` : ''}${title}`,
+    title: `${pageType !== EPage.Home ? `${pageType} | ` : ""}${title}`,
     description,
     icons: {
-      icon: [{ url: '/favicon.ico', sizes: 'any' }],
+      icon: [{ url: "/favicon.ico", sizes: "any" }],
       apple: [
-        { url: '/apple-touch-icon.png', type: 'image/png', sizes: '180x180' },
+        { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
       ],
     },
     openGraph: {
       title,
       description,
-      type: 'website',
+      type: "website",
       url,
       images: [{ url: image }],
       siteName,
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title,
       description,
       images: [image],

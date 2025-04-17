@@ -1,8 +1,8 @@
-import { generateMetadata } from '@/lib/metadata'
-import { Metadata } from 'next'
-import { EPage } from '@/lib/constant'
-import { cn } from '@/lib/utils'
-import MainWrapper, { LegalCss } from '@/components/MainWrapper'
+import { generateMetadata } from "@/lib/metadata"
+import { Metadata } from "next"
+import { EPage } from "@/lib/constant"
+import { cn } from "@/lib/utils"
+import MainWrapper, { LegalCss } from "@/components/MainWrapper"
 
 export const metadata: Metadata = generateMetadata({
   params: { pageType: EPage.PrivacyPolicy },
@@ -23,10 +23,12 @@ export default function PrivacyPolicy() {
       <div className="text-gray-700 max-w-3xl mx-auto font-comic space-y-6">
         <p className="mb-4">
           This Privacy Policy describes how General Index, LLC (dba Geodework)
-          (the "<strong>Company</strong>," "<strong>we</strong>," "
-          <strong>us</strong>" or "<strong>our</strong>") collects, uses,
-          stores, shares, and protects your information when you use this 'Say
-          Ethereum' website (the '<strong>Website</strong>').
+          (the &quot;<strong>Company</strong>,&quot; &quot;<strong>we</strong>
+          ,&quot; &quot;
+          <strong>us</strong>&quot; or &quot;<strong>our</strong>&quot;)
+          collects, uses, stores, shares, and protects your information when you
+          use this &apos;Say Ethereum&apos; website (the &apos;
+          <strong>Website</strong>&apos;).
         </p>
 
         <section className="mb-8">
@@ -83,7 +85,7 @@ export default function PrivacyPolicy() {
             We may collect, use, store and transfer different kinds of personal
             data about you which we have grouped together as follows:
           </p>
-          <ul className={cn(LegalCss.listWrapperCss, 'my-4')}>
+          <ul className={cn(LegalCss.listWrapperCss, "my-4")}>
             <li>
               <strong>Identity Data</strong> includes first name, birth name,
               last name, email address, or any other identity information you
@@ -111,7 +113,7 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
           <p className="mb-4">
-            We also collect, use, and share <strong>Aggregated Data</strong>{' '}
+            We also collect, use, and share <strong>Aggregated Data</strong>{" "}
             such as statistical or demographic data for any purpose. Aggregated
             Data may be derived from your personal data but is not considered
             personal data in law as this data does not directly or indirectly
@@ -132,7 +134,7 @@ export default function PrivacyPolicy() {
             We use different methods to collect data from and about you
             including through:
           </p>
-          <ul className={cn(LegalCss.listWrapperCss, 'my-4')}>
+          <ul className={cn(LegalCss.listWrapperCss, "my-4")}>
             <li>
               <strong>Direct interactions.</strong> You may provide your
               Identity, Technical, Usage, Marketing and Communications and
@@ -163,7 +165,7 @@ export default function PrivacyPolicy() {
             Website safely and seamlessly. The information we collect allows us
             to:
           </p>
-          <ul className={cn(LegalCss.listWrapperCss, 'my-4')}>
+          <ul className={cn(LegalCss.listWrapperCss, "my-4")}>
             <li>Deliver the full functionality of the Website;</li>
             <li>
               Stay connected with you: whether it be for providing customer
@@ -191,34 +193,34 @@ export default function PrivacyPolicy() {
             We may have to share your personal data with the parties set out
             below for the purposes set out in Section 4 above:
           </p>
-          <ul className={cn(LegalCss.listWrapperCss, 'my-4')}>
+          <ul className={cn(LegalCss.listWrapperCss, "my-4")}>
             <li>
-              <strong>Legal advisors</strong> – If we believe that disclosure is
-              reasonably necessary: (1) to comply with any applicable law,
-              regulation, legal process or governmental request; (2) to
-              establish, exercise or defend our legal rights; (3) to enforce or
-              comply with our Terms and Conditions; or (4) to protect us, users
-              of our Website or the public from harm, fraud, or potentially
-              prohibited or illegal activities.
+              <strong>Legal advisors</strong> &ndash; If we believe that
+              disclosure is reasonably necessary: (1) to comply with any
+              applicable law, regulation, legal process or governmental request;
+              (2) to establish, exercise or defend our legal rights; (3) to
+              enforce or comply with our Terms and Conditions; or (4) to protect
+              us, users of our Website or the public from harm, fraud, or
+              potentially prohibited or illegal activities.
             </li>
             <li>
-              <strong>Service Providers</strong> – The Company may provide your
-              personal information to other companies who help us provide,
+              <strong>Service Providers</strong> &ndash; The Company may provide
+              your personal information to other companies who help us provide,
               maintain, and improve the Website.
             </li>
             <li>
-              <strong>Professional advisers</strong> – In order to comply with
-              our legal obligations, we may need to share information with
+              <strong>Professional advisers</strong> &ndash; In order to comply
+              with our legal obligations, we may need to share information with
               professional advisers who provide consultancy, banking,
               compliance, insurance, or accounting services.
             </li>
             <li>
-              <strong>Third parties</strong> – We may choose to sell, transfer,
-              or merge parts of our business or our assets to third parties.
-              Alternatively, we may acquire other businesses or merge with them.
-              If a change happens to our business, then the new owners may use
-              your personal data in the same way as set out in this privacy
-              policy.
+              <strong>Third parties</strong> &ndash; We may choose to sell,
+              transfer, or merge parts of our business or our assets to third
+              parties. Alternatively, we may acquire other businesses or merge
+              with them. If a change happens to our business, then the new
+              owners may use your personal data in the same way as set out in
+              this privacy policy.
             </li>
           </ul>
         </section>
@@ -245,11 +247,11 @@ export default function PrivacyPolicy() {
           <p className="mb-4">
             The Website is not intended for children under the age of majority
             in the country they live (i.e. 18 years of age in the United States)
-            ("Minors"), and we do not knowingly collect information from Minors
-            without parental consent. If we learn we have collected or received
-            personal information from a Minor without verification of parental
-            consent, we will delete that information. If you believe we may have
-            information from or about a Minor, please contact us at
+            (&quot;Minors&quot;), and we do not knowingly collect information
+            from Minors without parental consent. If we learn we have collected
+            or received personal information from a Minor without verification
+            of parental consent, we will delete that information. If you believe
+            we may have information from or about a Minor, please contact us at
             hello@geodework.com.
           </p>
         </section>
@@ -259,7 +261,7 @@ export default function PrivacyPolicy() {
           <p className="mb-4">
             Residents of California may have additional rights regarding our use
             of your personal information. To learn more about your California
-            privacy rights, visit{' '}
+            privacy rights, visit{" "}
             <a
               href="https://oag.ca.gov/privacy/ccpa"
               className="text-pink-400 underline"
