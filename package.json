@@ -1,7 +1,10 @@
 {
   "name": "say-ethereum",
+  "description": "Learn how to pronounce Ethereum in different languages around the world",
   "version": "0.1.0",
-  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "dev:watch": "next dev --turbo",
@@ -10,7 +13,8 @@
     "start:ssg": "next build && npx serve@latest out",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

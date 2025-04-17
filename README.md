@@ -4,6 +4,8 @@
 
 # Say Ethereum
 
+[![CI](https://github.com/geodework/say-ethereum/actions/workflows/pr-checks.yml/badge.svg)](https://github.com/geodework/say-ethereum/actions/workflows/pr-checks.yml)
+
 Learn how to pronounce "Ethereum" in different languages around the world! ✧･ﾟ
 
 ## The Stack
