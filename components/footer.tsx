@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           {/* Section 1: Newsletter & Feedback */}
           <div className="text-center p-3 rounded-lg w-full max-w-md">
-            <p className="text-sm mb-2">Sign up for:</p>
+            <p className="text-sm mb-2 text-purple-700">Sign up for:</p>
             <a
               href="https://localethereum.beehiiv.com"
               target="_blank"
