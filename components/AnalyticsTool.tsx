@@ -3,14 +3,14 @@
 import { useEffect } from "react"
 import { push } from "@socialgouv/matomo-next"
 
-import { isProduction } from "@/lib/platform"
+import { isAnalyticsOptedOut } from "@/lib/analytics"
 
 const SITE_ID = "2"
 
 const AnalyticsTool = () => {
-  if (!isProduction) return <></>
-
   useEffect(() => {
+    if (isAnalyticsOptedOut()) return
+
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     push(["trackPageView"])
     push(["enableLinkTracking"])

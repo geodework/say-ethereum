@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { EPage } from "@/lib/constant"
 import { cn } from "@/lib/utils"
 import MainWrapper, { LegalCss } from "@/components/MainWrapper"
+import AnalyticsOptOut from "@/components/AnalyticsOptout"
 
 export const metadata: Metadata = generateMetadata({
   params: { pageType: EPage.PrivacyPolicy },
@@ -124,6 +125,8 @@ export default function PrivacyPolicy() {
             treat the combined data as personal data which will be used in
             accordance with this privacy policy.
           </p>
+
+          <AnalyticsOptOut />
         </section>
 
         <section className="mb-8">
