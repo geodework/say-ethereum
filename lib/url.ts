@@ -1,7 +1,8 @@
-const DOMAIN = "sayethereum.fun"
+import { isProduction } from "./platform"
+import { DOMAIN } from "./constant"
 
 export const getBaseUrl = () => {
-  if (process.env.NEXT_PUBLIC_VERCEL_TARGET_ENV === "production") {
+  if (isProduction) {
     return `https://${DOMAIN}`
   }
   if (process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL) {

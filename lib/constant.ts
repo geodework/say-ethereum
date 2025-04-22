@@ -5,3 +5,7 @@ export enum EPage {
   PrivacyPolicy = "Privacy Policy",
   TermsOfUse = "Terms of Use",
 }
+
+export const DOMAIN = "sayethereum.fun"
+
+export const ANALYTICS_OPT_OUT_KEY = "analytics-opt-out"

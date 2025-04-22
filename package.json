@@ -32,6 +32,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@socialgouv/matomo-next": "^1.9.2",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
