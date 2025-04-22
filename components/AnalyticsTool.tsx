@@ -5,7 +5,7 @@ import { push } from "@socialgouv/matomo-next"
 
 const SITE_ID = "2"
 
-const Matomo = () => {
+const AnalyticsTool = () => {
   useEffect(() => {
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     push(["trackPageView"])
@@ -32,4 +32,4 @@ const Matomo = () => {
   return <></>
 }
 
-export default Matomo
+export default AnalyticsTool
