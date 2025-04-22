@@ -3,9 +3,13 @@
 import { useEffect } from "react"
 import { push } from "@socialgouv/matomo-next"
 
+import { isProduction } from "@/lib/platform"
+
 const SITE_ID = "2"
 
 const AnalyticsTool = () => {
+  if (!isProduction) return <></>
+
   useEffect(() => {
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     push(["trackPageView"])
