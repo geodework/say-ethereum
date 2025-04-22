@@ -5,3 +5,5 @@ export enum EPage {
   PrivacyPolicy = "Privacy Policy",
   TermsOfUse = "Terms of Use",
 }
+
+export const DOMAIN = "sayethereum.fun"
