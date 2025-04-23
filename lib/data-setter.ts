@@ -42,3 +42,21 @@ function setAudioPath(data: TGeographyData) {
     }
   }
 }
+
+export interface IContinentViews {
+  slug: string
+  label: string
+}
+
+export function getContinentsViews(data: TGeographyData): IContinentViews[] {
+  return [
+    {
+      slug: "",
+      label: "All",
+    },
+    ...Object.keys(data).map((continent) => ({
+      slug: continent,
+      label: continent,
+    })),
+  ]
+}

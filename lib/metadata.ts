@@ -1,17 +1,23 @@
+import countryData from "@/data/country"
 import { EPage } from "./constant"
 import { getBaseUrl } from "./url"
+import { capitalizeString } from "./utils"
 
 const url = getBaseUrl()
 const image = `${url}/og.png`
 
 const siteName = "Say Ethereum"
 
-const title = `${siteName} - Discover how to pronounce Ethereum in different languages and countries by Geodework`
+const getTitle = (siteName: string) =>
+  `${siteName} - Discover how to pronounce Ethereum in different languages and countries by Geodework`
+
+const descSuffix =
+  "Geodework will pursue the geographic decentralization of Ethereum."
 
 const metadataList = {
   [EPage.Home]: {
     description:
-      "Learn how to pronounce Ethereum in different languages around the world. Geodework will pursue the geographic decentralization of Ethereum.",
+      "Learn how to pronounce Ethereum in different languages around the world",
   },
   [EPage.PrivacyPolicy]: {
     description: `Privacy Policy for ${siteName} - Learn about how we handle and protect your data when using our Ethereum pronunciation guide.`,
@@ -21,12 +27,17 @@ const metadataList = {
   },
 }
 
-export function generateMetadata({ params }: { params: { pageType: EPage } }) {
-  const { pageType } = params
-  const description = metadataList[pageType].description
+export function generateMetadata({
+  params,
+}: {
+  params: { pageType: EPage; continent?: string }
+}) {
+  const { pageType, continent } = params
+  const description = getDescription(pageType, continent || "")
+  const title = generateTitle(pageType, continent || "")
 
   return {
-    title: `${pageType !== EPage.Home ? `${pageType} | ` : ""}${title}`,
+    title,
     description,
     icons: {
       icon: [{ url: "/favicon.ico", sizes: "any" }],
@@ -50,4 +61,25 @@ export function generateMetadata({ params }: { params: { pageType: EPage } }) {
       site: siteName,
     },
   }
+}
+
+function generateTitle(pageType: EPage, continent: string): string {
+  if (pageType !== EPage.Home) return `${pageType} | ${getTitle(siteName)}`
+
+  return getTitle(
+    `${siteName}${continent ? ` in ${capitalizeString(continent)}` : ""}`
+  )
+}
+
+function getDescription(pageType: EPage, continent: string): string {
+  const desc = metadataList[pageType].description
+  if (pageType !== EPage.Home || !continent) return desc
+
+  const continentData = countryData[continent]
+  if (!continentData)
+    throw new Error(`Continent ${continent} not found in Metadata`)
+
+  const countries = continentData.map((details) => details.country)
+
+  return `${desc} in ${capitalizeString(continent)}: ${countries.join(", ")}. ${descSuffix}`
 }
