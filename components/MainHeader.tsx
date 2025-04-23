@@ -14,8 +14,8 @@ export default function MainHeader({ continent }: { continent: string }) {
         </span>
       </h1>
       <p className="text-gray-600 max-w-3xl mx-auto font-comic">
-        Ethereum is a global technology, but it's pronounced differently across
-        the world! Discover how 'Ethereum' sounds in{" "}
+        Ethereum is a global technology, but it&apos;s pronounced differently
+        across the world! Discover how &apos;Ethereum&apos; sounds in{" "}
         {continentLabel || "each country"}—one language at a time!
       </p>
     </div>

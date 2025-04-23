@@ -1,6 +1,6 @@
-import { Tabs, TabsContent } from "@/components/ui/tabs"
+import { Tabs } from "@/components/ui/tabs"
 import EthereumBearButton from "@/components/ethereum-bear-button"
-import countryData, { globe } from "@/data/country"
+import countryData from "@/data/country"
 import { getContinentsViews, setData } from "@/lib/data-setter"
 import Continents from "@/components/continents"
 import { generateMetadata } from "@/lib/metadata"
