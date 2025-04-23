@@ -27,7 +27,9 @@ describe("generateMetadata", () => {
     expect(metadata.title).toBe(title)
     expect(metadata.openGraph.title).toBe(title)
     expect(metadata.twitter.title).toBe(title)
-    expect(metadata.description).toContain("In Asia countries:")
+    expect(metadata.description).toContain(
+      "Learn how to pronounce Ethereum in different languages around the world in Asia:"
+    )
   })
 
   test("should generate metadata for Privacy Policy page", () => {

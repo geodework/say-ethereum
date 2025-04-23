@@ -11,10 +11,13 @@ const siteName = "Say Ethereum"
 const getTitle = (siteName: string) =>
   `${siteName} - Discover how to pronounce Ethereum in different languages and countries by Geodework`
 
+const descSuffix =
+  "Geodework will pursue the geographic decentralization of Ethereum."
+
 const metadataList = {
   [EPage.Home]: {
     description:
-      "Learn how to pronounce Ethereum in different languages around the world. Geodework will pursue the geographic decentralization of Ethereum.",
+      "Learn how to pronounce Ethereum in different languages around the world",
   },
   [EPage.PrivacyPolicy]: {
     description: `Privacy Policy for ${siteName} - Learn about how we handle and protect your data when using our Ethereum pronunciation guide.`,
@@ -78,5 +81,5 @@ function getDescription(pageType: EPage, continent: string): string {
 
   const countries = continentData.map((details) => details.country)
 
-  return `In ${capitalizeString(continent)} countries: ${countries.join(", ")}, ${desc[0].toLowerCase()}${desc.slice(1)}`
+  return `${desc} in ${capitalizeString(continent)}: ${countries.join(", ")}. ${descSuffix}`
 }
