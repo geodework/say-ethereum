@@ -3,6 +3,7 @@ import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnalyticsTool from "@/components/AnalyticsTool"
+import AdSense from "@/components/AdSense"
 
 export default function RootLayout({
   children,
@@ -11,6 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <AdSense />
+      </head>
       <body className="font-comic min-h-screen flex flex-col">
         <AnalyticsTool />
         <Header />
