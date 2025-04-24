@@ -7,5 +7,6 @@ export enum EPage {
 }
 
 export const DOMAIN = "sayethereum.fun"
+export const BASE_URL = `https://${DOMAIN}`
 
 export const ANALYTICS_OPT_OUT_KEY = "analytics-opt-out"
